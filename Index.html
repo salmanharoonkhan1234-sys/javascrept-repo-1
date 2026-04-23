@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meny projeact game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+     class="bg-[#0a1b2a]  text-white h-screen flex flex-col items-center justify-start gap-10"
+  > 
+    <h1
+      class="bg-[#081b31] text-white text-3xl font-bold h-[5rem] leading-[5rem] flex items-center justify-center"
+    >
+      Rock paper scissors
+    </h1>
+    <div class="choices  flex items-center justify-center gap-10 cursor-pointer">
+      <div
+        class="choice h-[165px] w-[165px] bg-[#081b31] rounded-full   flex flex-col items-center justify-center gap-2"
+        id="rock"
+      >
+        Rock <img src="imges/rock.png" alt="rock" class="w-16 h-16" />
+      </div>
+
+      <div
+        class="choice h-[165px] w-[165px] bg-[#081b31] rounded-full flex flex-col items-center justify-center gap-2"
+        id="paper"
+      >
+        Paper <img src="imges/paper.png" alt="paper " class="w-16 h-16" />
+      </div>
+
+      <div
+        class="choice h-[165px] w-[165px] bg-[#081b31] rounded-full flex flex-col items-center justify-center gap-2"
+        id="scissors"
+      >
+        Scissors <img src="imges/scissors.png" alt="scissors" class="w-16 h-16">
+      </div>
+    </div>
+
+    <div class="score-board flex items-center justify-center gap-10 font-bold text-2xl">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>YOU</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>comp</p>
+      </div>
+    </div>
+    <div class="msg-contaner bg-red-500 rounded-lg p-4 font-bold text-xl">
+      <p id="msg">play your move</p>
+    </div>
+
+
+
+    <script src="Index.js"></script>
+  </body>
+</html>
