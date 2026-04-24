@@ -7,9 +7,27 @@
 </head>
 <body>
     <h1>tic toc game</h1>
-    <div>
+    <div id="game-board">
         <button>X</button>
+          <button>O</button>
+            <button>X</button>
+              <button>O</button>
     </div>
+
+    <!-- styling -->
+     <style>
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 10px;
+        }
+        button {
+            font-size: 24px;
+            width: 100px;
+            height: 100px;
+        }
+     </style>
     
 </body>
 </html>
